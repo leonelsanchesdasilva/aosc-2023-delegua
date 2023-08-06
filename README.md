@@ -66,9 +66,48 @@ No momento da linha de passe, dois espaços na mesa podem receber fichas e dois 
 
 - Quem apostou em "pass" vence quando o resultado do lançamento é 7 ou 11. Esse resultado é chamado de "Natural";
 - Quem apostou em "don't pass" vence quando o resultado do lançamento é 2 ou 3. Quando o resultado é 12, algumas versões pagam uma ficha para cada ficha apostada, ou as fichas são simplesmente devolvidas aos jogadores. Este resultado é chamado de "Crap Out";
-- Para quaisquer outros resultados (4, 5, 6, 8, 9 ou 10), as fichas permanecem nas respectivas posições até o final da rodada. O número sorteado passa a ser o "ponto" ("point") da rodada.
+- Para quaisquer outros resultados (4, 5, 6, 8, 9 ou 10), as fichas permanecem nas respectivas posições até o final da rodada. O número sorteado passa a ser o "ponto" ("Point") da rodada.
 
 Os resultados "Natural" e "Crap Out" permitem aos jogadores apostar novamente em "pass" e "don't pass" para os lançamentos seguintes. Para os demais resultados, as posições "pass" e "don't pass" não podem mais receber fichas até o final da rodada, e as posições "come" e "don't come" passam a aceitar fichas, também até o final da rodada.
 
 #### Momento de ponto definido
 
+No momento de ponto definido, as posições "pass" e "don't pass" mudam de comportamento:
+
+- Quem apostou em "pass" vence quando o resultado do lançamento é o ponto. Esse resultado é chamado de "Point";
+- Quem apostou em "don't pass" vence quando o resultado do lançamento é 7. Esse resultado é chamado de "Seven Out".
+
+As posições "come" e "don't come" podem pagar ou redirecionar fichas, dependendo do resultado da rolagem:
+
+- Se a rolagem é um 7 ou 11 e há fichas em "come", os jogadores que apostaram nessa posição são premiados com uma ficha para cada ficha apostada. Para os resultados 4, 5, 6, 8, 9 ou 10, a ficha é redirecionada para o número da rolagem, e a aposta é a favor do número: ou seja, nas próximas rolagens, se o resultado se repetir, cada ficha apostada paga outra;
+- Se a rolagem é 2, 3 ou 12 e há fichas em "come", a casa fica com as fichas;
+- Se a rolagem é um 2 ou 3 e há fichas em "don't come", os jogadores que apostaram nessa posição são premiados com uma ficha para cada ficha apostada. Para os resultados 4, 5, 6, 8, 9 ou 10, a ficha é redirecionada para o número da rolagem, e a aposta é contra o número: ou seja, nas próximas rolagens, se o resultado se repetir, a casa fica com as fichas da posição. Se a próxima rolagem é um 7, cada ficha apostada em posições contra paga outra;
+- Se a rolagem é um 12 e há fichas em "don't come", as fichas são devolvidas aos respectivos jogadores.
+- Se a rolagem é um 7 ou 11 e há fichas em "don't come" a casa fica com as fichas.
+
+## Blackjack (Vinte-e-um)
+
+Blackjack é jogado com cartas. Os jogadores jogam contra a casa, aqui também chamada de "dealer". A pessoa "dealer" distribui as cartas em cada rodada.
+
+No início de cada rodada, a distribuição de cartas é feita da seguinte forma:
+
+- Cada jogador recebe uma carta virada para cima;
+- A casa recebe uma carta virada para cima;
+- Cada jogador recebe uma segunda carta virada para cima;
+- A casa recebe uma carta virada para baixo.
+
+Cada carta possui um valor inteiro:
+
+- Para as cartas de 2 até 10, o valor de cada carta corresponde ao número dela;
+- Para as cartas J, Q e K, o valor de cada carta é 10;
+- Para os ases, o valor pode ser 1 ou 10, dependendo do valor das outra carta.
+    - Se a soma dos valores das outras cartas é acima de 10, o ás vale 1;
+    - Se a soma dos valores das outras cartas é abaixo de 10, o ás vale 10.
+
+Se a soma dos valores das cartas, seja dos jogadores, seja da casa, é maior do que 21, o jogador ou a casa perdem a rodada. 
+
+Se a soma dos valores das cartas de um jogador é maior que a soma dos valores das cartas da casa, o jogador ganha. Caso contrário, a casa ganha.
+
+### O valor Blackjack
+
+Se um jogador ou a casa possuem uma carta J, Q ou K juntamente com um ás, o valor é um Blackjack, que é o valor máximo que um jogador ou a casa podem obter.
